@@ -114,22 +114,6 @@ Frontend/
 - `#relatorios` - Relatórios e análises de consumo
 - `#login` - Autenticação de usuários
 
-## Próximos Passos
-
-- [ ] Conectar com API Backend (Node.js/Python)
-- [ ] Implementar comunicação com Raspberry Pi
-- [ ] Integrar WebSocket para atualizações em tempo real
-- [ ] Adicionar gráficos interativos (Chart.js/D3.js)
-- [ ] Criar modais para CRUD de bois e programações
-- [ ] Implementar validação de formulários
-- [ ] Adicionar filtros e busca funcionais
-- [ ] Implementar paginação real com backend
-- [ ] Sistema de notificações push
-- [ ] Logs de atividades do sistema
-- [ ] Dark mode
-- [ ] PWA support (offline-first)
-- [ ] Testes unitários e E2E
-
 ## Hardware
 
 O sistema é projetado para trabalhar com:
@@ -139,10 +123,6 @@ O sistema é projetado para trabalhar com:
 - **Atuadores** - Liberação controlada de sal
 - **Tags RFID** (opcional) - Identificação individual dos bois
 
-## Desenvolvedor
-
-Bruno Roseni - TCC IFMS
-
 ---
 
-**Nota**: Este é um protótipo frontend. Para produção, integre com backend e implemente autenticação adequada.
+**Nota**: Este é um protótipo frontend.
