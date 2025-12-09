@@ -1,0 +1,381 @@
+<div class="page-header">
+    <div>
+        <h1 class="page-title">Meu Perfil</h1>
+        <p class="page-subtitle">Gerencie suas informações pessoais e preferências</p>
+    </div>
+</div>
+
+<div style="display: grid; grid-template-columns: 300px 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+    <!-- Profile Sidebar -->
+    <div class="card">
+        <div style="text-align: center; padding: 1.5rem;">
+            <div style="position: relative; display: inline-block; margin-bottom: 1rem;">
+                <div
+                    style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white; font-weight: 700; box-shadow: var(--shadow-lg);">
+                    JD
+                </div>
+                <button class="btn-icon"
+                    style="position: absolute; bottom: 0; right: 0; background: white; box-shadow: var(--shadow-md); width: 36px; height: 36px;">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </button>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.25rem;">José
+                da Silva</h3>
+            <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">jose.silva@fazenda.com
+            </p>
+            <span class="badge badge-success">Administrador</span>
+        </div>
+
+        <div style="border-top: 1px solid var(--border); padding: 1rem;">
+            <div
+                style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; color: var(--text-secondary); font-size: 0.875rem;">
+                <span class="material-symbols-outlined">calendar_today</span>
+                <span>Membro desde Jan 2024</span>
+            </div>
+            <div
+                style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem; color: var(--text-secondary); font-size: 0.875rem;">
+                <span class="material-symbols-outlined">login</span>
+                <span>Último acesso: Hoje, 14:32</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Content -->
+    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <!-- Personal Information -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Informações Pessoais</h3>
+                    <p class="card-description">Atualize seus dados pessoais</p>
+                </div>
+                <button class="btn btn-outline" onclick="editarInformacoes()">
+                    <span class="material-symbols-outlined">edit</span>
+                    Editar
+                </button>
+            </div>
+
+            <div class="card-body">
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                    <div class="form-group">
+                        <label class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" value="José da Silva" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" value="jose.silva@fazenda.com" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" value="(67) 99999-9999" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">CPF</label>
+                        <input type="text" class="form-control" value="123.456.789-00" readonly>
+                    </div>
+
+                    <div class="form-group" style="grid-column: 1 / -1;">
+                        <label class="form-label">Endereço da Fazenda</label>
+                        <input type="text" class="form-control"
+                            value="Fazenda Santa Maria, Zona Rural - Campo Grande/MS" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Account Settings -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Configurações da Conta</h3>
+                    <p class="card-description">Preferências do sistema</p>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="material-symbols-outlined" style="color: var(--primary);">notifications</span>
+                            <div>
+                                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">
+                                    Notificações por Email</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Receba alertas sobre
+                                    alimentação e dispositivos</div>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="material-symbols-outlined" style="color: var(--primary);">phone_iphone</span>
+                            <div>
+                                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">
+                                    Notificações Push</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Alertas em tempo real no
+                                    navegador</div>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: var(--bg-secondary); border-radius: var(--radius-md);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="material-symbols-outlined" style="color: var(--primary);">dark_mode</span>
+                            <div>
+                                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">Modo
+                                    Escuro</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Tema escuro automático
+                                </div>
+                            </div>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Security -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Segurança</h3>
+                    <p class="card-description">Gerencie sua senha e autenticação</p>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius-md);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="material-symbols-outlined" style="color: var(--text-secondary);">lock</span>
+                            <div>
+                                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">Senha
+                                </div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Última alteração há 2
+                                    meses</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline" onclick="alterarSenha()">
+                            Alterar Senha
+                        </button>
+                    </div>
+
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; border: 1px solid var(--border); border-radius: var(--radius-md);">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <span class="material-symbols-outlined"
+                                style="color: var(--text-secondary);">security</span>
+                            <div>
+                                <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-primary);">
+                                    Autenticação de Dois Fatores</div>
+                                <div style="font-size: 0.75rem; color: var(--text-secondary);">Adicione uma camada extra
+                                    de segurança</div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline" onclick="configurar2FA()">
+                            Configurar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Log -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">Atividade Recente</h3>
+                    <p class="card-description">Últimas ações realizadas na plataforma</p>
+                </div>
+            </div>
+
+            <div class="card-body" style="padding: 0;">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Ação</th>
+                                <th>Data/Hora</th>
+                                <th>IP</th>
+                                <th>Dispositivo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-symbols-outlined"
+                                            style="font-size: 1.125rem; color: var(--primary);">login</span>
+                                        <span>Login realizado</span>
+                                    </div>
+                                </td>
+                                <td>Hoje, 14:32</td>
+                                <td>192.168.1.100</td>
+                                <td>Chrome - Windows</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-symbols-outlined"
+                                            style="font-size: 1.125rem; color: var(--text-secondary);">edit</span>
+                                        <span>Programação de alimentação alterada</span>
+                                    </div>
+                                </td>
+                                <td>Hoje, 09:15</td>
+                                <td>192.168.1.100</td>
+                                <td>Chrome - Windows</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-symbols-outlined"
+                                            style="font-size: 1.125rem; color: var(--text-secondary);">add</span>
+                                        <span>Novo boi cadastrado</span>
+                                    </div>
+                                </td>
+                                <td>Ontem, 16:45</td>
+                                <td>192.168.1.100</td>
+                                <td>Chrome - Windows</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-symbols-outlined"
+                                            style="font-size: 1.125rem; color: var(--text-secondary);">settings</span>
+                                        <span>Configurações atualizadas</span>
+                                    </div>
+                                </td>
+                                <td>Ontem, 14:20</td>
+                                <td>192.168.1.100</td>
+                                <td>Chrome - Windows</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                        <span class="material-symbols-outlined"
+                                            style="font-size: 1.125rem; color: var(--primary);">login</span>
+                                        <span>Login realizado</span>
+                                    </div>
+                                </td>
+                                <td>Ontem, 08:00</td>
+                                <td>192.168.1.100</td>
+                                <td>Chrome - Windows</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Danger Zone -->
+        <div class="card" style="border-color: #ef4444;">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title" style="color: #ef4444;">Zona de Perigo</h3>
+                    <p class="card-description">Ações irreversíveis</p>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div
+                    style="display: flex; align-items: center; justify-content: space-between; padding: 1rem; background: rgba(239, 68, 68, 0.05); border-radius: var(--radius-md); border: 1px solid rgba(239, 68, 68, 0.2);">
+                    <div>
+                        <div style="font-size: 0.875rem; font-weight: 600; color: #ef4444;">Excluir Conta</div>
+                        <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">Uma vez
+                            excluída, não há como recuperar sua conta</div>
+                    </div>
+                    <button class="btn" style="background: #ef4444; color: white;" onclick="excluirConta()">
+                        Excluir Conta
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Toggle Switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 24px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #cbd5e1;
+        transition: 0.3s;
+        border-radius: 24px;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.3s;
+        border-radius: 50%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    input:checked+.slider {
+        background-color: var(--primary);
+    }
+
+    input:checked+.slider:before {
+        transform: translateX(24px);
+    }
+</style>
+
+<script>
+    function editarInformacoes() {
+        alert('Funcionalidade de edição será implementada em breve!');
+    }
+
+    function alterarSenha() {
+        alert('Funcionalidade de alteração de senha será implementada em breve!');
+    }
+
+    function configurar2FA() {
+        alert('Funcionalidade de 2FA será implementada em breve!');
+    }
+
+    function excluirConta() {
+        if (confirm('Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita!')) {
+            alert('Funcionalidade de exclusão será implementada em breve!');
+        }
+    }
+</script>

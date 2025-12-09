@@ -1,0 +1,378 @@
+<aside class="menuLateral">
+    <div class="menu-header">
+        <div class="menu-logo">
+            <span class="menu-icon"></span>
+            <div class="menu-text">
+                <h2 class="menu-title">Painel</h2>
+                <p class="menu-subtitle">Sistema de Gestão</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu-nav">
+        <div class="menu-section">
+            <span class="menu-section-title">PRINCIPAL</span>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#home" class="menu-link active">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span class="menu-link-text">Dashboard</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <span class="menu-section-title">REBANHO</span>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#boi" class="menu-link">
+                        <span class="material-symbols-outlined">pets</span>
+                        <span class="menu-link-text">Bois</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#pecuarista" class="menu-link">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="menu-link-text">Pecuaristas</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <span class="menu-section-title">ALIMENTAÇÃO</span>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#alimentacao" class="menu-link">
+                        <span class="material-symbols-outlined">nutrition</span>
+                        <span class="menu-link-text">Programação</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#cochos" class="menu-link">
+                        <span class="material-symbols-outlined">inventory_2</span>
+                        <span class="menu-link-text">Cochos</span>
+                    </a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#historico" class="menu-link">
+                        <span class="material-symbols-outlined">history</span>
+                        <span class="menu-link-text">Histórico</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <span class="menu-section-title">HARDWARE</span>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#dispositivos" class="menu-link">
+                        <span class="material-symbols-outlined">memory</span>
+                        <span class="menu-link-text">Dispositivos IoT</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-section">
+            <span class="menu-section-title">SISTEMA</span>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="#relatorios" class="menu-link">
+                        <span class="material-symbols-outlined">bar_chart</span>
+                        <span class="menu-link-text">Relatórios</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#configuracoes" class="menu-link">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="menu-link-text">Configurações</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-upgrade-card">
+            <div class="upgrade-icon"></div>
+            <h3 class="upgrade-title">Upgrade Pro</h3>
+            <p class="upgrade-text">Desbloqueie recursos avançados</p>
+            <button class="upgrade-btn">Fazer Upgrade</button>
+        </div>
+    </div>
+</aside>
+
+<style>
+    .menuLateral {
+        position: fixed;
+        left: 0;
+        top: 70px;
+        width: 280px;
+        height: calc(100vh - 70px);
+        background: white;
+        border-right: 1px solid #e5e7eb;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        z-index: 100;
+        box-shadow: 4px 0 6px -1px rgb(0 0 0 / 0.05);
+    }
+
+    .menuLateral::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .menuLateral::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .menuLateral::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 3px;
+    }
+
+    .menuLateral::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+    }
+
+    .menu-header {
+        padding: 1.5rem;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .menu-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+    }
+
+    .menu-text {
+        flex: 1;
+    }
+
+    .menu-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #111827;
+        margin-bottom: 0.125rem;
+    }
+
+    .menu-subtitle {
+        font-size: 0.75rem;
+        color: #6b7280;
+    }
+
+    .menu-nav {
+        flex: 1;
+        padding: 1rem 0;
+    }
+
+    .menu-section {
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-section-title {
+        display: block;
+        padding: 0.5rem 1.5rem;
+        font-size: 0.6875rem;
+        font-weight: 700;
+        color: #9ca3af;
+        letter-spacing: 0.05em;
+    }
+
+    .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-item {
+        margin: 0.25rem 0;
+    }
+
+    .menu-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1.5rem;
+        color: #6b7280;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        font-size: 0.875rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .menu-link::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 0;
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        border-radius: 0 3px 3px 0;
+        transition: height 0.2s ease;
+    }
+
+    .menu-link:hover {
+        color: #10b981;
+        background: rgba(16, 185, 129, 0.05);
+    }
+
+    .menu-link:hover::before {
+        height: 70%;
+    }
+
+    .menu-link.active {
+        color: #10b981;
+        background: rgba(16, 185, 129, 0.1);
+    }
+
+    .menu-link.active::before {
+        height: 70%;
+    }
+
+    .menu-link .material-symbols-outlined {
+        font-size: 1.25rem;
+    }
+
+    .menu-link-text {
+        flex: 1;
+    }
+
+    .menu-arrow {
+        font-size: 1rem !important;
+        transition: transform 0.2s ease;
+    }
+
+    .menu-toggle.active .menu-arrow {
+        transform: rotate(90deg);
+    }
+
+    .menu-submenu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .menu-submenu.active {
+        max-height: 500px;
+    }
+
+    .submenu-item {
+        margin: 0;
+    }
+
+    .submenu-link {
+        display: block;
+        padding: 0.625rem 1.5rem 0.625rem 3.75rem;
+        color: #6b7280;
+        text-decoration: none;
+        font-size: 0.8125rem;
+        transition: all 0.2s ease;
+    }
+
+    .submenu-link:hover {
+        color: #10b981;
+        background: rgba(16, 185, 129, 0.05);
+    }
+
+    .menu-footer {
+        padding: 1rem;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .menu-upgrade-card {
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        border-radius: 0.75rem;
+        padding: 1.25rem;
+        text-align: center;
+        color: white;
+    }
+
+    .upgrade-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .upgrade-title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .upgrade-text {
+        font-size: 0.75rem;
+        opacity: 0.9;
+        margin-bottom: 0.75rem;
+    }
+
+    .upgrade-btn {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        background: white;
+        color: #10b981;
+        border: none;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        font-size: 0.8125rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .upgrade-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.2);
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Toggle de submenus
+        const menuToggles = document.querySelectorAll('.menu-toggle');
+
+        menuToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const targetId = toggle.getAttribute('data-target');
+                const submenu = document.getElementById(targetId);
+
+                toggle.classList.toggle('active');
+                submenu.classList.toggle('active');
+            });
+        });
+
+        // Marcar link ativo
+        const menuLinks = document.querySelectorAll('.menu-link[href], .submenu-link[href]');
+        const currentHash = window.location.hash || '#home';
+
+        menuLinks.forEach(link => {
+            if (link.getAttribute('href') === currentHash) {
+                link.classList.add('active');
+            }
+
+            link.addEventListener('click', () => {
+                menuLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    });
+</script>

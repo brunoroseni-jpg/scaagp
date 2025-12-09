@@ -1,0 +1,213 @@
+<div class="page-relatorios">
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">Relatórios e Análises</h1>
+            <p class="page-subtitle">Visualize métricas e gere relatórios detalhados</p>
+        </div>
+    </div>
+
+    <!-- Cards de Métricas -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-primary">
+                <span class="material-symbols-outlined">scale</span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">2.850kg</h3>
+                <p class="stat-label">Consumo Mensal de Sal</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-success">
+                <span class="material-symbols-outlined">speed</span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">98.5%</h3>
+                <p class="stat-label">Eficiência do Sistema</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-info">
+                <span class="material-symbols-outlined">timer</span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">8.3g/dia</h3>
+                <p class="stat-label">Consumo Médio por Boi</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="content-grid">
+        <div class="card chart-card">
+            <div class="card-header">
+                <h2 class="card-title">Consumo de Sal por Período</h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-placeholder">
+                    <span class="material-symbols-outlined">bar_chart</span>
+                    <p>Gráfico de barras - Consumo diário</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Distribuição por Tipo de Sal</h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-placeholder">
+                    <span class="material-symbols-outlined">pie_chart</span>
+                    <p>Gráfico de pizza - Tipos de sal</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Performance dos Cochos</h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-placeholder">
+                    <span class="material-symbols-outlined">monitoring</span>
+                    <p>Gráfico de linha - Uptime</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Taxa de Falhas</h2>
+            </div>
+            <div class="card-body">
+                <div class="chart-placeholder">
+                    <span class="material-symbols-outlined">analytics</span>
+                    <p>Gráfico de área - Falhas por dia</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões de Exportação -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Exportar Relatórios</h2>
+        </div>
+        <div class="card-body">
+            <div class="export-grid">
+                <button class="btn btn-secondary">
+                    <span class="material-symbols-outlined">description</span>
+                    Relatório Completo (PDF)
+                </button>
+                <button class="btn btn-secondary">
+                    <span class="material-symbols-outlined">table_chart</span>
+                    Planilha de Consumo (Excel)
+                </button>
+                <button class="btn btn-secondary">
+                    <span class="material-symbols-outlined">file_download</span>
+                    Dados Brutos (CSV)
+                </button>
+                <button class="btn btn-secondary">
+                    <span class="material-symbols-outlined">insert_chart</span>
+                    Análise Mensal (PDF)
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: 1.5rem;
+        box-shadow: var(--shadow-sm);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stat-icon-primary {
+        background: rgba(99, 102, 241, 0.1);
+        color: #6366f1;
+    }
+
+    .stat-icon-success {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .stat-icon-info {
+        background: rgba(59, 130, 246, 0.1);
+        color: #3b82f6;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .chart-card {
+        grid-column: span 2;
+    }
+
+    .chart-placeholder {
+        height: 300px;
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light);
+    }
+
+    .chart-placeholder .material-symbols-outlined {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .export-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .chart-card {
+            grid-column: span 1;
+        }
+    }
+</style>

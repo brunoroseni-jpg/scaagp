@@ -1,0 +1,176 @@
+<div class="page-historico">
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">Histórico de Alimentação</h1>
+            <p class="page-subtitle">Visualize todas as alimentações realizadas pelo sistema</p>
+        </div>
+        <button class="btn btn-secondary">
+            <span class="material-symbols-outlined">file_download</span>
+            Exportar CSV
+        </button>
+    </div>
+
+    <!-- Filtros -->
+    <div class="card filters-card">
+        <div class="filters-grid">
+            <div class="filter-group">
+                <label class="filter-label">Período</label>
+                <select class="input">
+                    <option>Hoje</option>
+                    <option>Últimos 7 dias</option>
+                    <option>Últimos 30 dias</option>
+                    <option>Personalizado</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Boi</label>
+                <input type="text" class="input" placeholder="ID ou Brinco...">
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Cocho</label>
+                <select class="input">
+                    <option>Todos</option>
+                    <option>Cocho 1</option>
+                    <option>Cocho 2</option>
+                    <option>Cocho 3</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Status</label>
+                <select class="input">
+                    <option>Todos</option>
+                    <option>Concluído</option>
+                    <option>Falha</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Histórico -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Registros de Hoje (142)</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>Boi</th>
+                        <th>Cocho</th>
+                        <th>Tipo de Sal</th>
+                        <th>Quantidade</th>
+                        <th>Duração</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08/12/2025 08:05</td>
+                        <td><strong>Boi #342</strong><br><small>Nelore</small></td>
+                        <td>Cocho 1</td>
+                        <td>Sal Mineral</td>
+                        <td>250g</td>
+                        <td>45s</td>
+                        <td><span class="badge badge-success">Concluído</span></td>
+                    </tr>
+                    <tr>
+                        <td>08/12/2025 07:35</td>
+                        <td><strong>Boi #289</strong><br><small>Angus</small></td>
+                        <td>Cocho 3</td>
+                        <td>Sal Proteico</td>
+                        <td>300g</td>
+                        <td>52s</td>
+                        <td><span class="badge badge-success">Concluído</span></td>
+                    </tr>
+                    <tr>
+                        <td>08/12/2025 07:10</td>
+                        <td><strong>Boi #245</strong><br><small>Brahman</small></td>
+                        <td>Cocho 2</td>
+                        <td>Sal Mineral</td>
+                        <td>200g</td>
+                        <td>-</td>
+                        <td><span class="badge badge-info">Falha</span></td>
+                    </tr>
+                    <tr>
+                        <td>07/12/2025 18:20</td>
+                        <td><strong>Boi #156</strong><br><small>Nelore</small></td>
+                        <td>Cocho 1</td>
+                        <td>Sal Proteico</td>
+                        <td>280g</td>
+                        <td>48s</td>
+                        <td><span class="badge badge-success">Concluído</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button class="btn-pagination" disabled>
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <span class="pagination-info">Página 1 de 15</span>
+            <button class="btn-pagination">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .filters-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .filters-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+    }
+
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 1rem 1rem;
+        border-top: 1px solid var(--border);
+    }
+
+    .pagination-info {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    .btn-pagination {
+        background: none;
+        border: 1px solid var(--border);
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+        transition: all 0.2s ease;
+    }
+
+    .btn-pagination:hover:not(:disabled) {
+        background: var(--bg-tertiary);
+        border-color: var(--primary);
+        color: var(--primary);
+    }
+
+    .btn-pagination:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+</style>

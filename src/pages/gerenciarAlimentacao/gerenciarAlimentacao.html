@@ -1,0 +1,117 @@
+<div class="page-alimentacao">
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">Gerenciar Alimentação</h1>
+            <p class="page-subtitle">Controle a alimentação do rebanho</p>
+        </div>
+        <button class="btn btn-primary">
+            <span class="material-symbols-outlined">add</span>
+            Registrar Alimentação
+        </button>
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-success">
+                <span class="material-symbols-outlined">restaurant</span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">1,450kg</h3>
+                <p class="stat-label">Ração Hoje</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-warning">
+                <span class="material-symbols-outlined">inventory</span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">8.5 ton</h3>
+                <p class="stat-label">Estoque Total</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Histórico de Alimentação</h2>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Data/Hora</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Lote</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hoje, 08:30</td>
+                        <td>Ração Premium</td>
+                        <td>150kg</td>
+                        <td>Lote 45</td>
+                        <td><span class="badge badge-success">Concluído</span></td>
+                    </tr>
+                    <tr>
+                        <td>Hoje, 07:45</td>
+                        <td>Silagem</td>
+                        <td>200kg</td>
+                        <td>Lote 32</td>
+                        <td><span class="badge badge-success">Concluído</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<style>
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: 1.5rem;
+        box-shadow: var(--shadow-sm);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stat-icon-success {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .stat-icon-warning {
+        background: rgba(245, 158, 11, 0.1);
+        color: #f59e0b;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+</style>

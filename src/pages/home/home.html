@@ -1,0 +1,590 @@
+<div class="dashboard">
+    <!-- Header da Dashboard -->
+    <div class="dashboard-header">
+        <div class="header-content">
+            <h1 class="dashboard-title">Dashboard</h1>
+            <p class="dashboard-subtitle">Sistema de Controle Automatizado de Alimentação de Gado</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-secondary">
+                <span class="material-symbols-outlined">refresh</span>
+                Atualizar
+            </button>
+            <button class="btn btn-primary">
+                <span class="material-symbols-outlined">add</span>
+                Nova Programação
+            </button>
+        </div>
+    </div>
+
+    <!-- Cards de Estatísticas -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-header">
+                <div class="stat-icon stat-icon-primary">
+                    <span class="material-symbols-outlined">pets</span>
+                </div>
+                <span class="stat-trend stat-trend-up">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    5%
+                </span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">342</h3>
+                <p class="stat-label">Bois Cadastrados</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-header">
+                <div class="stat-icon stat-icon-success">
+                    <span class="material-symbols-outlined">check_circle</span>
+                </div>
+                <span class="stat-trend stat-trend-up">
+                    <span class="material-symbols-outlined">trending_up</span>
+                    12%
+                </span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">98%</h3>
+                <p class="stat-label">Taxa de Alimentação</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-header">
+                <div class="stat-icon stat-icon-warning">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                </div>
+                <span class="stat-trend stat-trend-down">
+                    <span class="material-symbols-outlined">trending_down</span>
+                    15%
+                </span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">2.8 ton</h3>
+                <p class="stat-label">Estoque de Sal</p>
+            </div>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-header">
+                <div class="stat-icon stat-icon-info">
+                    <span class="material-symbols-outlined">memory</span>
+                </div>
+                <span class="stat-trend stat-trend-up">
+                    <span class="material-symbols-outlined">check</span>
+                    Online
+                </span>
+            </div>
+            <div class="stat-body">
+                <h3 class="stat-value">8/8</h3>
+                <p class="stat-label">Dispositivos Ativos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gráficos e Tabelas -->
+    <div class="content-grid">
+        <!-- Gráfico de Consumo -->
+        <div class="card chart-card">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Consumo de Sal</h2>
+                    <p class="card-subtitle">Últimos 7 dias</p>
+                </div>
+                <button class="card-action">
+                    <span class="material-symbols-outlined">more_vert</span>
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="chart-placeholder">
+                    <span class="material-symbols-outlined">show_chart</span>
+                    <p>Gráfico de consumo diário</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alimentações Recentes -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Alimentações Recentes</h2>
+                    <p class="card-subtitle">Últimas 5 ações</p>
+                </div>
+                <a href="#historico" class="card-link">Ver histórico</a>
+            </div>
+            <div class="card-body">
+                <div class="list">
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <span class="material-symbols-outlined">check_circle</span>
+                        </div>
+                        <div class="list-content">
+                            <h4 class="list-title">Cocho 1 - Pasto A</h4>
+                            <p class="list-subtitle">Boi #342 - 250g de sal mineral</p>
+                        </div>
+                        <span class="badge badge-success">Concluído</span>
+                        <span class="list-time">Há 5 min</span>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <span class="material-symbols-outlined">check_circle</span>
+                        </div>
+                        <div class="list-content">
+                            <h4 class="list-title">Cocho 3 - Pasto B</h4>
+                            <p class="list-subtitle">Boi #289 - 200g de sal mineral</p>
+                        </div>
+                        <span class="badge badge-success">Concluído</span>
+                        <span class="list-time">Há 12 min</span>
+                    </div>
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <span class="material-symbols-outlined">pending</span>
+                        </div>
+                        <div class="list-content">
+                            <h4 class="list-title">Cocho 2 - Pasto A</h4>
+                            <p class="list-subtitle">Boi #156 - 300g de sal proteico</p>
+                        </div>
+                        <span class="badge badge-warning">Aguardando</span>
+                        <span class="list-time">Programado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alertas e Notificações -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Alertas do Sistema</h2>
+                    <p class="card-subtitle">Requer atenção</p>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-warning">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div class="alert-content">
+                        <h4 class="alert-title">Estoque Baixo - Cocho 5</h4>
+                        <p class="alert-text">Apenas 15kg de sal mineral restante</p>
+                    </div>
+                </div>
+                <div class="alert alert-info">
+                    <span class="material-symbols-outlined">info</span>
+                    <div class="alert-content">
+                        <h4 class="alert-title">Manutenção Programada</h4>
+                        <p class="alert-text">Dispositivo Raspberry Pi #3 necessita atualização</p>
+                    </div>
+                </div>
+                <div class="alert alert-success">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    <div class="alert-content">
+                        <h4 class="alert-title">Sistema Operacional</h4>
+                        <p class="alert-text">Todos os cochos funcionando normalmente</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status dos Cochos -->
+        <div class="card">
+            <div class="card-header">
+                <div>
+                    <h2 class="card-title">Status dos Cochos</h2>
+                    <p class="card-subtitle">Monitoramento em tempo real</p>
+                </div>
+                <a href="#cochos" class="card-link">Ver todos</a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Cocho</th>
+                                <th>Local</th>
+                                <th>Estoque</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Cocho 1</strong></td>
+                                <td>Pasto A</td>
+                                <td>85%</td>
+                                <td><span class="badge badge-success">Operacional</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cocho 2</strong></td>
+                                <td>Pasto A</td>
+                                <td>92%</td>
+                                <td><span class="badge badge-success">Operacional</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cocho 5</strong></td>
+                                <td>Pasto C</td>
+                                <td>15%</td>
+                                <td><span class="badge badge-warning">Estoque Baixo</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dashboard {
+        animation: fadeIn 0.3s ease-in;
+    }
+
+    .dashboard-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .dashboard-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .dashboard-subtitle {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    .header-actions {
+        display: flex;
+        gap: 0.75rem;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: var(--radius-lg);
+        padding: 1.5rem;
+        box-shadow: var(--shadow-sm);
+        border: 1px solid var(--border);
+        transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+        box-shadow: var(--shadow-md);
+        transform: translateY(-2px);
+    }
+
+    .stat-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .stat-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .stat-icon-primary {
+        background: rgba(99, 102, 241, 0.1);
+        color: #6366f1;
+    }
+
+    .stat-icon-success {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .stat-icon-warning {
+        background: rgba(245, 158, 11, 0.1);
+        color: #f59e0b;
+    }
+
+    .stat-icon-info {
+        background: rgba(59, 130, 246, 0.1);
+        color: #3b82f6;
+    }
+
+    .stat-trend {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 0.25rem 0.5rem;
+        border-radius: var(--radius-sm);
+    }
+
+    .stat-trend-up {
+        background: rgba(16, 185, 129, 0.1);
+        color: #10b981;
+    }
+
+    .stat-trend-down {
+        background: rgba(239, 68, 68, 0.1);
+        color: #ef4444;
+    }
+
+    .stat-trend .material-symbols-outlined {
+        font-size: 1rem;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    /* Content Grid */
+    .content-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .chart-card {
+        grid-column: span 2;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 0.25rem;
+    }
+
+    .card-subtitle {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+    }
+
+    .card-action {
+        background: none;
+        border: none;
+        color: var(--text-secondary);
+        cursor: pointer;
+        padding: 0.25rem;
+        border-radius: var(--radius-sm);
+        transition: all 0.2s ease;
+    }
+
+    .card-action:hover {
+        background: var(--bg-tertiary);
+        color: var(--text-primary);
+    }
+
+    .card-link {
+        font-size: 0.875rem;
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.2s ease;
+    }
+
+    .card-link:hover {
+        color: var(--primary-dark);
+    }
+
+    .card-body {
+        color: var(--text-primary);
+    }
+
+    /* Chart Placeholder */
+    .chart-placeholder {
+        height: 300px;
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-light);
+    }
+
+    .chart-placeholder .material-symbols-outlined {
+        font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* List */
+    .list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background: var(--bg-secondary);
+        border-radius: var(--radius-md);
+        transition: all 0.2s ease;
+    }
+
+    .list-item:hover {
+        background: var(--bg-tertiary);
+    }
+
+    .list-icon {
+        width: 40px;
+        height: 40px;
+        background: white;
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary);
+    }
+
+    .list-content {
+        flex: 1;
+    }
+
+    .list-title {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        margin-bottom: 0.125rem;
+    }
+
+    .list-subtitle {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+    }
+
+    .list-time {
+        font-size: 0.75rem;
+        color: var(--text-light);
+        white-space: nowrap;
+    }
+
+    /* Alerts */
+    .alert {
+        display: flex;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: var(--radius-md);
+        margin-bottom: 0.75rem;
+    }
+
+    .alert:last-child {
+        margin-bottom: 0;
+    }
+
+    .alert .material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+
+    .alert-warning {
+        background: rgba(245, 158, 11, 0.1);
+        color: #d97706;
+    }
+
+    .alert-info {
+        background: rgba(59, 130, 246, 0.1);
+        color: #2563eb;
+    }
+
+    .alert-success {
+        background: rgba(16, 185, 129, 0.1);
+        color: #059669;
+    }
+
+    .alert-content {
+        flex: 1;
+    }
+
+    .alert-title {
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+    }
+
+    .alert-text {
+        font-size: 0.75rem;
+        opacity: 0.9;
+    }
+
+    /* Table */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table thead {
+        background: var(--bg-secondary);
+    }
+
+    .table th {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-secondary);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .table td {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+        color: var(--text-primary);
+        border-top: 1px solid var(--border);
+    }
+
+    .table tbody tr:hover {
+        background: var(--bg-secondary);
+    }
+
+    @media (max-width: 768px) {
+        .content-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .chart-card {
+            grid-column: span 1;
+        }
+
+        .dashboard-header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+</style>

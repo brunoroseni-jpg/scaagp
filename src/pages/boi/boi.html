@@ -1,0 +1,207 @@
+<div class="page-bois">
+    <!-- Header -->
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">Gestão de Bois</h1>
+            <p class="page-subtitle">Gerencie o rebanho e configure a alimentação automatizada</p>
+        </div>
+        <button class="btn btn-primary">
+            <span class="material-symbols-outlined">add</span>
+            Adicionar Boi
+        </button>
+    </div>
+
+    <!-- Filtros -->
+    <div class="card filters-card">
+        <div class="filters-grid">
+            <div class="filter-group">
+                <label class="filter-label">Buscar</label>
+                <input type="text" class="input" placeholder="ID, brinco ou raça...">
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Status</label>
+                <select class="input">
+                    <option>Todos</option>
+                    <option>Ativo</option>
+                    <option>Em tratamento</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Raça</label>
+                <select class="input">
+                    <option>Todas</option>
+                    <option>Nelore</option>
+                    <option>Angus</option>
+                    <option>Brahman</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label class="filter-label">Alimentação</label>
+                <select class="input">
+                    <option>Todos</option>
+                    <option>Com programação</option>
+                    <option>Sem programação</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lista -->
+    <div class="card">
+        <div class="card-header">
+            <h2 class="card-title">Rebanho Total (342)</h2>
+            <div class="card-actions">
+                <button class="btn btn-secondary btn-sm">
+                    <span class="material-symbols-outlined">file_download</span>
+                    Exportar
+                </button>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Boi</th>
+                        <th>Raça</th>
+                        <th>Peso</th>
+                        <th>Idade</th>
+                        <th>Alimentação</th>
+                        <th>Cocho</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>#342</strong><br><small>Brinco: 12345</small></td>
+                        <td>Nelore</td>
+                        <td>450kg</td>
+                        <td>2 anos</td>
+                        <td>
+                            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                                <span style="font-size: 0.875rem; font-weight: 600;">250g Sal Mineral</span>
+                                <span style="font-size: 0.75rem; color: var(--text-secondary);">2x ao dia</span>
+                            </div>
+                        </td>
+                        <td>Cocho 1</td>
+                        <td><span class="badge badge-success">Ativo</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn-icon" title="Ver detalhes">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                                <button class="btn-icon" title="Editar">
+                                    <span class="material-symbols-outlined">edit</span>
+                                </button>
+                                <button class="btn-icon" title="Configurar alimentação">
+                                    <span class="material-symbols-outlined">nutrition</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>#289</strong><br><small>Brinco: 12290</small></td>
+                        <td>Angus</td>
+                        <td>520kg</td>
+                        <td>3 anos</td>
+                        <td>
+                            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                                <span style="font-size: 0.875rem; font-weight: 600;">300g Sal Proteico</span>
+                                <span style="font-size: 0.75rem; color: var(--text-secondary);">2x ao dia</span>
+                            </div>
+                        </td>
+                        <td>Cocho 3</td>
+                        <td><span class="badge badge-success">Ativo</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn-icon" title="Ver detalhes">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                                <button class="btn-icon" title="Editar">
+                                    <span class="material-symbols-outlined">edit</span>
+                                </button>
+                                <button class="btn-icon" title="Configurar alimentação">
+                                    <span class="material-symbols-outlined">nutrition</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>#156</strong><br><small>Brinco: 11567</small></td>
+                        <td>Brahman</td>
+                        <td>380kg</td>
+                        <td>1.5 anos</td>
+                        <td>
+                            <span class="badge badge-warning">Sem programação</span>
+                        </td>
+                        <td>-</td>
+                        <td><span class="badge badge-info">Aguardando</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <button class="btn-icon" title="Ver detalhes">
+                                    <span class="material-symbols-outlined">visibility</span>
+                                </button>
+                                <button class="btn-icon" title="Editar">
+                                    <span class="material-symbols-outlined">edit</span>
+                                </button>
+                                <button class="btn-icon btn-icon-primary" title="Configurar alimentação">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button class="btn-pagination" disabled>
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            <span class="pagination-info">Página 1 de 35</span>
+            <button class="btn-pagination">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .page-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .page-subtitle {
+        font-size: 0.875rem;
+        color: var(--text-secondary);
+    }
+
+    .filters-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .filters-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .filter-label {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text-secondary);
+    }
+</style>

@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'farm'; /* Nome que você dará à sua fonte */
+  src: url('../fonts/farm.ttf') format('truetype'); /* Caminho para o arquivo */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
